@@ -45,10 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typedElement && typeof Typed !== 'undefined') {
         const typed = new Typed('#typed-element', {
             strings: [
-                'Full Stack Developer',
-                'Software Engineer',
+                'Mobile Developer',
+                'UI/UX Designer',
                 'Problem Solver',
-                'Tech Enthusiast',
                 'Code Architect'
             ],
             typeSpeed: 50,
@@ -87,7 +86,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll(
-        '.project-card, .stack-item, .tool-item, .about-text, .avatar-container, .resume-block, .achievement-item'
+        '.project-card, .stack-item, .tool-item, .resume-block, .achievement-item'
     );
     
     animateElements.forEach(el => {
