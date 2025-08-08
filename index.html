@@ -1,248 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рабeх Аззам - My Official Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - tabler icons
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <!--
+    - font awesome icons
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Рабeх Аззам</a>
+
+  <main>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Рабeх Аззам" width="40">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Рабeх Аззам">Рабeх Аззам</h1>
+
+          <p class="title">Developer</p>
+          <p class="availability"><span class="availability-dot"></span> Available</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <i class="ti ti-chevron-down"></i>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="ti ti-mail"></i>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rabehxofficial@gmail.com" class="contact-link">rabehxofficial@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="ti ti-calendar"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-01-25">January 25, 2005</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="ti ti-map-pin"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Setif, Algeria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/rabehx.io" class="social-link">
+              <i class="ti ti-brand-instagram"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.reddit.com/user/rabahx" class="social-link">
+              <i class="ti ti-brand-reddit"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://t.me/rabehx" class="social-link">
+              <i class="ti ti-brand-telegram"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>
+              <i class="ti ti-user"></i>
+              <span>About</span>
+            </button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>
+              <i class="ti ti-file-cv"></i>
+              <span>Resume</span>
+            </button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>
+              <i class="ti ti-briefcase-2"></i>
+              <span>Portfolio</span>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm Rabeh — a mobile developer from Algeria passionate about creating exceptional mobile experiences.
+          </p>
+          
+          <p>
+            I specialize in native mobile app development, with expertise in Android development using Kotlin and Java. My focus is on building secure, user-friendly mobile applications that solve real-world problems.
+          </p>
+          
+          <p>
+            Beyond coding, I'm passionate about mobile security engineering and crafting intuitive UI/UX designs that enhance user engagement. I love staying up-to-date with the latest mobile technologies and best practices.
+          </p>
+          
+          <p>
+            Currently working on mobile security solutions and innovative app projects, I'm always excited to collaborate on mobile applications that make a meaningful impact in people's daily lives.
+          </p>
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="ti ti-certificate"></i>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Ferhat Abbas</h4>
+
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                Licentiate degree in Automatique.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="ti ti-books"></i>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Native App Developer</h4>
+
+              <span>2022 — Now</span>
+
+              <p class="timeline-text">
+                Building native Android applications using Kotlin and Jetpack Compose.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mobile Security Engineer</h4>
+
+              <span>2023 — Now</span>
+
+              <p class="timeline-text">
+                Responsible for securing mobile applications and ensuring data protection.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
+
+              <span>2023 — Now</span>
+
+              <p class="timeline-text">
+                Responsible for designing user-friendly interfaces and enhancing user experiences.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+          <div class="skills-grid">
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="ti ti-brand-kotlin"></i>
+              </div>
+              <h4 class="skill-name">Kotlin</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="fab fa-java"></i>
+              </div>
+              <h4 class="skill-name">Java</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="ti ti-brand-python"></i>
+              </div>
+              <h4 class="skill-name">Python</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="fas fa-c"></i>
+              </div>
+              <h4 class="skill-name">C++</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="ti ti-terminal"></i>
+              </div>
+              <h4 class="skill-name">Shell Script</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="ti ti-brand-figma"></i>
+              </div>
+              <h4 class="skill-name">Figma</h4>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon-box">
+                <i class="ti ti-brand-github"></i>
+              </div>
+              <h4 class="skill-name">Git & GitHub</h4>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Libraries</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <i class="ti ti-chevron-down"></i>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Libraries</button>
+              </li>
+
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="particles-container">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="greeting">
-                        <h1>Hi There! <span class="wave">👋🏻</span></h1>
-                    </div>
-                    <div class="name-section">
-                        <h2>I'M <span class="highlight">Рабeх Аззам</span></h2>
-                    </div>
-                    <div class="typed-text">
-                        <h3>I'M A <span id="typed-element"></span></h3>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="coding-animation">
-                        <i class="fas fa-code"></i>
-                        <div class="code-lines">
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Recent <span class="highlight">Works</span></h2>
-            <p class="section-subtitle">Here are a few projects I've worked on recently.</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Securify</h3>
-                        <p>Yet Another detection application.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">C++</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Machine Learning Classifier</h3>
-                        <p>A machine learning model for image classification using TensorFlow and Python, with a web interface built using Flask.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Real-time Chat Application</h3>
-                        <p>A real-time chat application with multiple rooms, user authentication, and message history using Socket.io and Express.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">JWT</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <ul class="project-list">
 
-    <!-- Tech Stack Section -->
-    <section id="stack" class="stack">
-        <div class="container">
-            <h2 class="section-title">Professional <span class="highlight">Skillset</span></h2>
-            <div class="stack-grid">
-                <div class="stack-item">
-                    <i class="fab fa-kotlin"></i>
-                    <span>Kotlin</span>
-                </div>
-                <div class="stack-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="stack-item">
-                    <i class="fab fa-node-js"></i>
-                    <span>C++</span>
-                </div>
-                <div class="stack-item">
-                    <i class="fab fa-java"></i>
-                    <span>Java</span>
-                </div>
-                <div class="stack-item">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="stack-item">
-                    <i class="fab fa-aws"></i>
-                    <span>Shell Script</span>
-                </div>
-            </div>
-            
-            <h2 class="section-title tools-title"><span class="highlight">Tools</span> I Use</h2>
-            <div class="tools-grid">
-                <div class="tool-item">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-code"></i>
-                    <span>VS Code</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fab fa-figma"></i>
-                    <span>Figma</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-terminal"></i>
-                    <span>Terminal</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/RabehX/Securify">
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2><span class="highlight">FIND ME ON</span></h2>
-                <p>Feel free to <span class="highlight">connect</span> with me</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:your.email@example.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <i class="ti ti-eye"></i>
+                  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>Copyright © 2025 <span class="highlight">Рабeх Аззам</span></p>
-            </div>
-        </div>
-    </footer>
+                  <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/icon.png" alt="securify" loading="lazy">
+                </figure>
 
-    <script src="script.js"></script>
+                <h3 class="project-title">Securify</h3>
+
+                <p class="project-category">Yet Another detection application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="libraries">
+              <a href="https://github.com/RabehX/iconsax-compose">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <i class="ti ti-eye"></i>
+                  </div>
+
+                  <img src="https://raw.githubusercontent.com/RabehX/iconsax-compose/refs/heads/master/icon.png" alt="iconsax-compose" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Iconsax Compose</h3>
+
+                <p class="project-category">Iconsax icon library for Jetpack Compose, supporting multiple styles</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-</html>
 
+</html>
