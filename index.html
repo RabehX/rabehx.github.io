@@ -1,480 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Рабeх Аззам - My Official Website</title>
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-
-  <!--
-    - tabler icons
-  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-
-  <!--
-    - font awesome icons
-  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Developer specializing in Android, Kotlin, and security solutions. Building elegant mobile experiences.">
+    <meta name="keywords" content="Mobile Developer, Android, Kotlin, Jetpack Compose, Rabeh Azzam">
+    <meta name="author" content="Рабeх Аззам">
+    <title>Рабeх Аззам | Mobile Developer</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/64314390?v=4" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-  <main>
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Рабeх Аззам" width="40">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Рабeх Аззам">Рабeх Аззам</h1>
-
-          <p class="title">Developer</p>
-          <p class="availability"><span class="availability-dot"></span> Available</p>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">РАБEХ АЗЗАМ</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <i class="ti ti-chevron-down"></i>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <i class="ti ti-mail"></i>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:rabehxofficial@gmail.com" class="contact-link">rabehxofficial@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <i class="ti ti-calendar"></i>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2005-01-25">January 25, 2005</time>
-            </div>
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <i class="ti ti-map-pin"></i>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Setif, Algeria</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/rabehx.io" class="social-link">
-              <i class="ti ti-brand-instagram"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.reddit.com/user/rabahx" class="social-link">
-              <i class="ti ti-brand-reddit"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://t.me/rabehx" class="social-link">
-              <i class="ti ti-brand-telegram"></i>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <div class="main-content">
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>
-              <i class="ti ti-user"></i>
-              <span>About</span>
-            </button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>
-              <i class="ti ti-file-cv"></i>
-              <span>Resume</span>
-            </button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>
-              <i class="ti ti-briefcase-2"></i>
-              <span>Portfolio</span>
-            </button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hi, I'm Rabeh — a mobile developer from Algeria passionate about creating exceptional mobile experiences.
-          </p>
-          
-          <p>
-            I specialize in native mobile app development, with expertise in Android development using Kotlin and Java. My focus is on building secure, user-friendly mobile applications that solve real-world problems.
-          </p>
-          
-          <p>
-            Beyond coding, I'm passionate about mobile security engineering and crafting intuitive UI/UX designs that enhance user engagement. I love staying up-to-date with the latest mobile technologies and best practices.
-          </p>
-          
-          <p>
-            Currently working on mobile security solutions and innovative app projects, I'm always excited to collaborate on mobile applications that make a meaningful impact in people's daily lives.
-          </p>
-        </section>
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <i class="ti ti-certificate"></i>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University Ferhat Abbas</h4>
-
-              <span>2023 — 2027</span>
-
-              <p class="timeline-text">
-                Licentiate degree in Automatique.
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <i class="ti ti-books"></i>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Native App Developer</h4>
-
-              <span>2022 — Now</span>
-
-              <p class="timeline-text">
-                Building native Android applications using Kotlin and Jetpack Compose.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mobile Security Engineer</h4>
-
-              <span>2023 — Now</span>
-
-              <p class="timeline-text">
-                Responsible for securing mobile applications and ensuring data protection.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
-
-              <span>2023 — Now</span>
-
-              <p class="timeline-text">
-                Responsible for designing user-friendly interfaces and enhancing user experiences.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My Skills</h3>
-          <div class="skills-grid">
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="ti ti-brand-kotlin"></i>
-              </div>
-              <h4 class="skill-name">Kotlin</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="fab fa-java"></i>
-              </div>
-              <h4 class="skill-name">Java</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="ti ti-brand-python"></i>
-              </div>
-              <h4 class="skill-name">Python</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="fas fa-c"></i>
-              </div>
-              <h4 class="skill-name">C++</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="ti ti-terminal"></i>
-              </div>
-              <h4 class="skill-name">Shell Script</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="ti ti-brand-figma"></i>
-              </div>
-              <h4 class="skill-name">Figma</h4>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon-box">
-                <i class="ti ti-brand-github"></i>
-              </div>
-              <h4 class="skill-name">Git & GitHub</h4>
-            </div>
-          </div>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Libraries</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <i class="ti ti-chevron-down"></i>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Libraries</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/RabehX/Securify">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <i class="ti ti-eye"></i>
-                  </div>
-
-                  <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/icon.png" alt="securify" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Securify</h3>
-
-                <p class="project-category">Yet Another detection application</p>
-
-              </a>
-            </li>
-
-            <li class="project-item" data-filter-item data-category="libraries">
-              <a href="https://github.com/RabehX/iconsax-compose">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <i class="ti ti-eye"></i>
-                  </div>
-
-                  <img src="https://raw.githubusercontent.com/RabehX/iconsax-compose/refs/heads/master/icon.png" alt="iconsax-compose" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Iconsax Compose</h3>
-
-                <p class="project-category">Iconsax icon library for Jetpack Compose, supporting multiple styles</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
     </div>
 
-  </main>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">РАБEХ АЗЗАМ</a>
+            <button class="nav__toggle" aria-label="Toggle menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
 
-  <!--
-    - custom js link
-  -->
-  <script src="/assets/js/script.js"></script>
+    <!-- Full Screen Menu -->
+    <div class="menu">
+        <div class="menu__content">
+            <nav class="menu__nav">
+                <a href="#hero" class="menu__link" data-index="01">Home</a>
+                <a href="#works" class="menu__link" data-index="02">Selected Works</a>
+                <a href="#about" class="menu__link" data-index="03">About</a>
+                <a href="#contact" class="menu__link" data-index="04">Contact</a>
+            </nav>
+            <div class="menu__footer">
+                <p class="menu__footer-text">Available for select projects</p>
+            </div>
+        </div>
+    </div>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero__content">
+            <div class="hero__avatar">
+                <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Рабeх Аззам">
+            </div>
+            <p class="hero__subtitle">Mobile Developer</p>
+            <h1 class="hero__title">
+                <span class="hero__title-line">Crafting Mobile</span>
+                <span class="hero__title-line hero__title-line--italic">Experiences</span>
+            </h1>
+            <p class="hero__bio">Specializing in Android, Kotlin & Security Solutions</p>
+            <a href="https://github.com/rabehx" target="_blank" class="hero__cta">
+                <span>View GitHub</span>
+                <span class="hero__cta-arrow">→</span>
+            </a>
+        </div>
+        <div class="hero__year">
+            <span>BORN JAN 25, 2005</span>
+        </div>
+    </section>
 
+    <!-- Selected Works Section -->
+    <section id="works" class="works">
+        <div class="works__header">
+            <span class="section-index">02</span>
+            <h2 class="section-title">Selected Works</h2>
+            <p class="section-subtitle">A curated collection of digital craftsmanship</p>
+        </div>
+        
+        <div class="works__gallery">
+            <article class="work-card">
+                <a href="https://github.com/RabehX/Securify" target="_blank">
+                    <div class="work-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/icon.png" alt="Securify" class="work-card__img" onerror="this.style.display='none'">
+                        <div class="work-card__overlay">
+                            <span class="work-card__view">View Project</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="work-card__content">
+                    <span class="work-card__category">Mobile Application</span>
+                    <h3 class="work-card__title">Securify</h3>
+                    <p class="work-card__description">Advanced mobile security detection application</p>
+                </div>
+            </article>
+
+            <article class="work-card">
+                <a href="https://github.com/RabehX/iconsax-compose" target="_blank">
+                    <div class="work-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="https://raw.githubusercontent.com/RabehX/iconsax-compose/refs/heads/master/icon.png" alt="Iconsax Compose" class="work-card__img" onerror="this.style.display='none'">
+                        <div class="work-card__overlay">
+                            <span class="work-card__view">View Project</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="work-card__content">
+                    <span class="work-card__category">Library</span>
+                    <h3 class="work-card__title">Iconsax Compose</h3>
+                    <p class="work-card__description">Iconsax icon library for Jetpack Compose, supporting multiple styles</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about__header">
+            <span class="section-index">03</span>
+            <h2 class="section-title">About</h2>
+        </div>
+        
+        <div class="about__content">
+            <div class="about__intro">
+                <p class="about__intro-text">
+                    Currently working on mobile security solutions and innovative app projects. 
+                    I'm always excited to collaborate on <em>mobile applications</em> that make 
+                    a meaningful impact in people's daily lives.
+                </p>
+            </div>
+            
+            <div class="about__philosophy">
+                <div class="about__philosophy-item">
+                    <h3 class="about__philosophy-title">Languages</h3>
+                    <ul class="about__skills">
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+                
+                <div class="about__philosophy-item">
+                    <h3 class="about__philosophy-title">Tools & Technologies</h3>
+                    <ul class="about__skills">
+                        <li>Jetpack Compose</li>
+                        <li>Android SDK</li>
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                
+                <div class="about__philosophy-item">
+                    <h3 class="about__philosophy-title">Focus</h3>
+                    <p class="about__philosophy-text">
+                        Mobile security solutions, Android development, and creating 
+                        elegant user experiences. I believe in writing clean, maintainable 
+                        code that stands the test of time.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about__signature">
+            <span class="about__signature-line"></span>
+            <span class="about__signature-text">Crafted with intention</span>
+            <span class="about__signature-line"></span>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="stats">
+        <div class="stats__container">
+            <div class="stats__item">
+                <div class="stats__number" data-target="2">0</div>
+                <div class="stats__label">Open Source Projects</div>
+            </div>
+            <div class="stats__divider"></div>
+            <div class="stats__item">
+                <div class="stats__number">Kotlin</div>
+                <div class="stats__label">Primary Language</div>
+            </div>
+            <div class="stats__divider"></div>
+            <div class="stats__item">
+                <div class="stats__number">Android</div>
+                <div class="stats__label">Platform Focus</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact__header">
+            <span class="section-index">04</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's collaborate on your next mobile project</p>
+        </div>
+        
+        <div class="contact__content">
+            <form class="contact__form" id="contactForm">
+                <div class="form__group">
+                    <label class="form__label" for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                    <span class="form__line"></span>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                    <span class="form__line"></span>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="project">Project Type</label>
+                    <div class="custom-select">
+                        <div class="custom-select__trigger">
+                            <span class="custom-select__value">Select an option</span>
+                            <svg class="custom-select__arrow" width="12" height="12" viewBox="0 0 12 12">
+                                <path d="M6 8L1 3h10z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="custom-select__options">
+                            <div class="custom-select__option" data-value="android">Android Application</div>
+                            <div class="custom-select__option" data-value="kotlin-library">Kotlin/Compose Library</div>
+                            <div class="custom-select__option" data-value="security">Security Solution</div>
+                            <div class="custom-select__option" data-value="collaboration">Open Source Collaboration</div>
+                            <div class="custom-select__option" data-value="other">Other</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="project" name="project" required>
+                    <span class="form__line"></span>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea id="message" name="message" class="form__input form__textarea" rows="4" required></textarea>
+                    <span class="form__line"></span>
+                </div>
+                
+                <button type="submit" class="form__submit">
+                    <span class="form__submit-text">Send Inquiry</span>
+                    <span class="form__submit-arrow"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__left">
+                <span class="footer__logo">РАБEХ АЗЗАМ</span>
+                <span class="footer__tagline">Mobile Developer</span>
+            </div>
+            <div class="footer__center">
+                <p class="footer__copyright">© 2026 — All rights reserved</p>
+            </div>
+            <div class="footer__right">
+                <a href="https://github.com/rabehx" target="_blank" class="footer__social" aria-label="GitHub">
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:rabehxofficial@gmail.com" class="footer__social" aria-label="Email">
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
-
-
