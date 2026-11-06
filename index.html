@@ -2,273 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mobile Developer specializing in Android, Kotlin, and security solutions. Building elegant mobile experiences.">
-    <meta name="keywords" content="Mobile Developer, Android, Kotlin, Jetpack Compose, Rabeh Azzam">
-    <meta name="author" content="Рабeх Аззам">
-    <title>Рабeх Аззам | Mobile Developer</title>
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/64314390?v=4" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Rabeh Azzam — Android developer</title>
+    <meta name="description" content="Rabeh Azzam (Рабех Аззам) builds Android apps and Kotlin libraries: Securify, a root checker with Play Integrity, and Iconsax Compose, 1,000+ icons for Compose Multiplatform.">
+    <meta name="author" content="Rabeh Azzam">
+    <meta name="theme-color" content="#f2f1ec" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RX-2005 — Rabeh Azzam, datasheet">
+    <meta property="og:description" content="Android, Kotlin and Compose. The name on the front page is ten ImageVectors — drag the points.">
+    <meta property="og:url" content="https://rabehx.github.io/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/64314390?v=4">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23121212'/%3E%3Cpath d='M7 20V4h5.5a4.5 4.5 0 0 1 0 9H7' fill='none' stroke='%23f2f1ec' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">РАБEХ АЗЗАМ</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="nav__logo">РАБEХ АЗЗАМ</a>
-            <button class="nav__toggle" aria-label="Toggle menu">
-                <span class="nav__toggle-line"></span>
-                <span class="nav__toggle-line"></span>
-            </button>
+    <header class="topbar">
+        <a class="topbar__part" href="#top" aria-label="Back to top">
+            <span class="topbar__code">RX-2005</span>
+            <span class="topbar__name">Рабех Аззам</span>
+        </a>
+        <nav class="topbar__nav" aria-label="Sections">
+            <a href="#inspector" data-nav><span class="n">2</span>Inspector</a>
+            <a href="#applications" data-nav><span class="n">3</span>Applications</a>
+            <a href="#characteristics" data-nav><span class="n">4</span>Characteristics</a>
+            <a href="#ordering" data-nav class="topbar__cta"><span class="n">5</span>Ordering</a>
         </nav>
     </header>
 
-    <!-- Full Screen Menu -->
-    <div class="menu">
-        <div class="menu__content">
-            <nav class="menu__nav">
-                <a href="#hero" class="menu__link" data-index="01">Home</a>
-                <a href="#works" class="menu__link" data-index="02">Selected Works</a>
-                <a href="#about" class="menu__link" data-index="03">About</a>
-                <a href="#contact" class="menu__link" data-index="04">Contact</a>
-            </nav>
-            <div class="menu__footer">
-                <p class="menu__footer-text">Available for select projects</p>
-            </div>
-        </div>
-    </div>
+    <main id="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero__content">
-            <div class="hero__avatar">
-                <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Рабeх Аззам">
+        <!-- 1 · Front page -->
+        <section class="page page--front" id="top" aria-labelledby="title">
+            <div class="runhead">
+                <span>RX-2005</span>
+                <span>Datasheet</span>
+                <span class="runhead__rev">Rev. <span data-year>2026</span></span>
             </div>
-            <p class="hero__subtitle">Mobile Developer</p>
-            <h1 class="hero__title">
-                <span class="hero__title-line">Crafting Mobile</span>
-                <span class="hero__title-line hero__title-line--italic">Experiences</span>
-            </h1>
-            <p class="hero__bio">Specializing in Android, Kotlin & Security Solutions</p>
-            <a href="https://github.com/rabehx" target="_blank" class="hero__cta">
-                <span>View GitHub</span>
-                <span class="hero__cta-arrow">→</span>
-            </a>
-        </div>
-        <div class="hero__year">
-            <span>BORN JAN 25, 2005</span>
-        </div>
-    </section>
 
-    <!-- Selected Works Section -->
-    <section id="works" class="works">
-        <div class="works__header">
-            <span class="section-index">02</span>
-            <h2 class="section-title">Selected Works</h2>
-            <p class="section-subtitle">A curated collection of digital craftsmanship</p>
-        </div>
-        
-        <div class="works__gallery">
-            <article class="work-card">
-                <a href="https://github.com/RabehX/Securify" target="_blank">
-                    <div class="work-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/icon.png" alt="Securify" class="work-card__img" onerror="this.style.display='none'">
-                        <div class="work-card__overlay">
-                            <span class="work-card__view">View Project</span>
+            <div class="front__title">
+                <h1 id="title">
+                    <span class="front__latin">Rabeh Azzam</span>
+                    <span class="front__role">Android developer. Kotlin, Compose, and the security bits underneath.</span>
+                </h1>
+            </div>
+
+            <figure class="specimen" aria-labelledby="fig1">
+                <div class="specimen__grid" data-specimen role="group" aria-label="The name Рабех Аззам drawn as ten vector letters"></div>
+                <figcaption id="fig1" class="caption">
+                    <span class="caption__num">Fig. 1</span>
+                    <span>Рабех Аззам, set as ten Compose <code>ImageVector</code> paths on a 24&thinsp;×&thinsp;24 icon keyline grid, stroke <span data-weight-label>1.5</span>.
+                    <span class="hint-fine">Hover a letter and drag its points. Click one to read its code.</span>
+                    <span class="hint-coarse">Tap a letter to take it apart.</span></span>
+                </figcaption>
+            </figure>
+
+            <div class="front__cols">
+                <div class="col">
+                    <h2 class="col__head">General description</h2>
+                    <p>I build Android apps and open-source Kotlin libraries. Most of my time goes into Jetpack Compose and the less visible parts of a phone: whether it's rooted, whether a request can be trusted, whether an icon actually sits on the pixel grid.</p>
+                </div>
+                <div class="col">
+                    <h2 class="col__head">Features</h2>
+                    <ul class="features">
+                        <li>Kotlin first, Java when the codebase is older than me</li>
+                        <li>Jetpack Compose and Compose Multiplatform</li>
+                        <li>Root and tamper detection, Play Integrity API</li>
+                        <li>Material&nbsp;3 Expressive, dynamic color</li>
+                        <li>Signed releases you can verify yourself</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2 class="col__head">Typical applications</h2>
+                    <ol class="apps">
+                        <li><a href="#securify"><span>Securify</span><span class="apps__what">Android app</span></a></li>
+                        <li><a href="#iconsax"><span>Iconsax Compose</span><span class="apps__what">Compose library</span></a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 · Inspector -->
+        <section class="page" id="inspector" aria-labelledby="inspector-title">
+            <div class="sechead">
+                <span class="sechead__num">2</span>
+                <h2 id="inspector-title" class="sechead__title">Inspector</h2>
+                <p class="sechead__sub">Each letter above is a path you could paste into a Compose project. Pick one, pull it out of shape, copy what you made.</p>
+            </div>
+
+            <div class="inspector" data-inspector>
+                <div class="inspector__stage">
+                    <div class="picker" role="radiogroup" aria-label="Letter" data-picker></div>
+                    <div class="inspector__canvas">
+                        <svg class="letter letter--big" data-inspector-svg viewBox="-1 -1 26 26" role="img" aria-label="Selected letter, editable"></svg>
+                        <div class="readout mono" data-readout aria-live="polite">Drag a point</div>
+                    </div>
+                    <div class="controls">
+                        <label class="slider">
+                            <span class="slider__label mono">strokeLineWidth</span>
+                            <input type="range" min="0.5" max="3" step="0.25" value="1.5" data-weight>
+                            <output class="mono" data-weight-out>1.5f</output>
+                        </label>
+                        <div class="toggles">
+                            <button type="button" class="btn btn--toggle" aria-pressed="true" data-toggle="keylines">Keylines</button>
+                            <button type="button" class="btn btn--toggle" aria-pressed="true" data-toggle="points">Points</button>
+                            <button type="button" class="btn" data-reset="one">Reset letter</button>
+                            <button type="button" class="btn" data-reset="all">Reset all</button>
                         </div>
                     </div>
-                </a>
-                <div class="work-card__content">
-                    <span class="work-card__category">Mobile Application</span>
-                    <h3 class="work-card__title">Securify</h3>
-                    <p class="work-card__description">Advanced mobile security detection application</p>
+                </div>
+                <div class="inspector__code">
+                    <div class="codehead">
+                        <span class="mono" data-code-file>Р.kt</span>
+                        <button type="button" class="btn btn--sm" data-copy-code>Copy</button>
+                    </div>
+                    <pre class="code" data-code tabindex="0" aria-label="Kotlin source for the selected letter"></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 · Applications -->
+        <section class="page" id="applications" aria-labelledby="applications-title">
+            <div class="sechead">
+                <span class="sechead__num">3</span>
+                <h2 id="applications-title" class="sechead__title">Applications</h2>
+            </div>
+
+            <article class="app" id="securify" aria-labelledby="securify-title">
+                <header class="app__head">
+                    <span class="app__ref mono">3.1</span>
+                    <h3 id="securify-title" class="app__title">Securify</h3>
+                    <p class="app__kind mono">Android app · Kotlin · Compose</p>
+                </header>
+
+                <div class="app__body">
+                    <div class="app__text">
+                        <p class="app__lede">Yet another root checker, done properly.</p>
+                        <p>It looks for Magisk and KernelSU modifications, checks Play Integrity verdicts through its backend, and lays out the device details people actually ask about: ABI, kernel version, build fingerprint, security patch level. Material 3 Expressive with dynamic color, and an AMOLED theme for the people who care.</p>
+                        <p>Want it without ads or tracking? That's the GitHub build. Every APK there is signed with the certificate below, so you can check it yourself with <code>apksigner verify</code>.</p>
+
+                        <dl class="spec">
+                            <div><dt>Platform</dt><dd>Android, broad ABI coverage, emulators included</dd></div>
+                            <div><dt>Latest release</dt><dd><a href="https://github.com/RabehX/Securify/releases/latest" target="_blank" rel="noopener" data-gh-release="RabehX/Securify">GitHub Releases</a></dd></div>
+                            <div><dt>Stars</dt><dd data-gh-stars="RabehX/Securify">—</dd></div>
+                            <div class="spec__wide"><dt>Signing cert SHA-256</dt><dd><code class="fingerprint">64:F1:E8:E1:9D:9E:38:DA:6E:F3:92:F6:D4:1C:5B:65:14:6C:BB:42:12:B4:94:4D:2B:19:39:C6:7B:24:78:24</code></dd></div>
+                        </dl>
+
+                        <div class="links">
+                            <a class="btn btn--solid" href="https://play.google.com/store/apps/details?id=io.github.rabehx.securify" target="_blank" rel="noopener">Google Play</a>
+                            <a class="btn" href="https://github.com/RabehX/Securify/releases/latest" target="_blank" rel="noopener">APK on GitHub</a>
+                            <a class="btn" href="https://github.com/RabehX/Securify" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+
+                    <div class="app__figs">
+                        <figure class="shot">
+                            <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/docs/screenshots/cover/feature-graphic.png" alt="Securify's feature graphic: the overview screen with detected threats and a Play Integrity check" loading="lazy" width="1024" height="500">
+                            <figcaption class="caption"><span class="caption__num">Fig. 3</span><span>Securify overview screen.</span></figcaption>
+                        </figure>
+
+                        <figure class="selftest" data-selftest aria-labelledby="fig4">
+                            <div class="selftest__head">
+                                <span class="mono">Self-test · this browser</span>
+                                <button type="button" class="btn btn--sm" data-selftest-run>Run again</button>
+                            </div>
+                            <table class="selftest__table">
+                                <caption class="sr-only">Checks run locally on your browser</caption>
+                                <tbody data-selftest-rows></tbody>
+                            </table>
+                            <p class="selftest__verdict mono" data-selftest-verdict aria-live="polite"></p>
+                            <figcaption id="fig4" class="caption"><span class="caption__num">Fig. 4</span><span>The same idea, pointed at you. Every check runs in your browser and nothing is sent anywhere.</span></figcaption>
+                        </figure>
+                    </div>
                 </div>
             </article>
 
-            <article class="work-card">
-                <a href="https://github.com/RabehX/iconsax-compose" target="_blank">
-                    <div class="work-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <img src="https://raw.githubusercontent.com/RabehX/iconsax-compose/refs/heads/master/icon.png" alt="Iconsax Compose" class="work-card__img" onerror="this.style.display='none'">
-                        <div class="work-card__overlay">
-                            <span class="work-card__view">View Project</span>
+            <article class="app" id="iconsax" aria-labelledby="iconsax-title">
+                <header class="app__head">
+                    <span class="app__ref mono">3.2</span>
+                    <h3 id="iconsax-title" class="app__title">Iconsax Compose</h3>
+                    <p class="app__kind mono">Compose Multiplatform library · GPL-3.0</p>
+                </header>
+
+                <div class="app__body">
+                    <div class="app__text">
+                        <p class="app__lede">Over a thousand Iconsax icons, ready to drop into Compose.</p>
+                        <p>The full <a href="https://iconsax.dev/" target="_blank" rel="noopener">Iconsax</a> set by Vuesax, generated into Kotlin so you can hand any icon to the standard <code>Icon</code> composable. Icons are grouped by style, and arrows that should flip in right-to-left layouts live under <code>AutoMirrored</code>.</p>
+                        <p>Fig. 1 is drawn the same way: 24&thinsp;×&thinsp;24 viewport, round caps and joins, one stroke.</p>
+
+                        <dl class="spec">
+                            <div><dt>Targets</dt><dd>Android, and anything else Compose Multiplatform runs on</dd></div>
+                            <div><dt>Styles</dt><dd>Outline, Filled, AutoMirrored</dd></div>
+                            <div><dt>Artifact</dt><dd><code>io.github.rabehx:iconsax-compose</code></dd></div>
+                            <div><dt>Stars</dt><dd data-gh-stars="RabehX/iconsax-compose">—</dd></div>
+                        </dl>
+
+                        <div class="links">
+                            <a class="btn btn--solid" href="https://github.com/RabehX/iconsax-compose" target="_blank" rel="noopener">Source</a>
+                            <a class="btn" href="https://central.sonatype.com/artifact/io.github.rabehx/iconsax-compose" target="_blank" rel="noopener">Maven Central</a>
                         </div>
                     </div>
-                </a>
-                <div class="work-card__content">
-                    <span class="work-card__category">Library</span>
-                    <h3 class="work-card__title">Iconsax Compose</h3>
-                    <p class="work-card__description">Iconsax icon library for Jetpack Compose, supporting multiple styles</p>
+
+                    <div class="app__figs">
+                        <figure class="snippet">
+                            <div class="codehead">
+                                <span class="mono">build.gradle.kts</span>
+                                <button type="button" class="btn btn--sm" data-copy="implementation(&quot;io.github.rabehx:iconsax-compose:0.0.5&quot;)">Copy</button>
+                            </div>
+<pre class="code"><span class="k">dependencies</span> {
+    implementation(<span class="s">"io.github.rabehx:iconsax-compose:0.0.5"</span>)
+}</pre>
+                        </figure>
+                        <figure class="snippet">
+                            <div class="codehead">
+                                <span class="mono">Example.kt</span>
+                            </div>
+<pre class="code"><span class="k">import</span> io.github.rabehx.iconsax.Iconsax
+
+<span class="a">@Composable</span>
+<span class="k">fun</span> <span class="f">Bell</span>() {
+    Icon(
+        imageVector = Iconsax.Filled.Notification,
+        contentDescription = <span class="s">"Notifications"</span>
+    )
+}</pre>
+                            <figcaption class="caption"><span class="caption__num">Fig. 5</span><span>Installation and usage. Needs <code>mavenCentral()</code> in your repositories.</span></figcaption>
+                        </figure>
+                    </div>
                 </div>
             </article>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about__header">
-            <span class="section-index">03</span>
-            <h2 class="section-title">About</h2>
-        </div>
-        
-        <div class="about__content">
-            <div class="about__intro">
-                <p class="about__intro-text">
-                    Currently working on mobile security solutions and innovative app projects. 
-                    I'm always excited to collaborate on <em>mobile applications</em> that make 
-                    a meaningful impact in people's daily lives.
-                </p>
+        <!-- 4 · Characteristics -->
+        <section class="page" id="characteristics" aria-labelledby="characteristics-title">
+            <div class="sechead">
+                <span class="sechead__num">4</span>
+                <h2 id="characteristics-title" class="sechead__title">Characteristics</h2>
             </div>
-            
-            <div class="about__philosophy">
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Languages</h3>
-                    <ul class="about__skills">
-                        <li>Kotlin</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>Shell Script</li>
-                    </ul>
-                </div>
-                
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Tools & Technologies</h3>
-                    <ul class="about__skills">
-                        <li>Jetpack Compose</li>
-                        <li>Android SDK</li>
-                        <li>Git & GitHub</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-                
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Focus</h3>
-                    <p class="about__philosophy-text">
-                        Mobile security solutions, Android development, and creating 
-                        elegant user experiences. I believe in writing clean, maintainable 
-                        code that stands the test of time.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="about__signature">
-            <span class="about__signature-line"></span>
-            <span class="about__signature-text">Crafted with intention</span>
-            <span class="about__signature-line"></span>
-        </div>
-    </section>
 
-    <!-- GitHub Stats Section -->
-    <section class="stats">
-        <div class="stats__container">
-            <div class="stats__item">
-                <div class="stats__number" data-target="2">0</div>
-                <div class="stats__label">Open Source Projects</div>
-            </div>
-            <div class="stats__divider"></div>
-            <div class="stats__item">
-                <div class="stats__number">Kotlin</div>
-                <div class="stats__label">Primary Language</div>
-            </div>
-            <div class="stats__divider"></div>
-            <div class="stats__item">
-                <div class="stats__number">Android</div>
-                <div class="stats__label">Platform Focus</div>
-            </div>
-        </div>
-    </section>
+            <div class="chars">
+                <div class="chars__text">
+                    <figure class="portrait">
+                        <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Rabeh's GitHub avatar" loading="lazy" width="460" height="460">
+                        <figcaption class="mono">@RabehX</figcaption>
+                    </figure>
+                    <p>I write Kotlin for work and for fun. I like problems with a right answer you can check: a spring curve that settles where it should, a path that lands on the grid, an APK whose signature matches.</p>
+                    <p>Most of what I make ends up open source. If something here is useful to you, or broken, I want to hear about it.</p>
+                </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact__header">
-            <span class="section-index">04</span>
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's collaborate on your next mobile project</p>
-        </div>
-        
-        <div class="contact__content">
-            <form class="contact__form" id="contactForm">
-                <div class="form__group">
-                    <label class="form__label" for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form__input" required>
-                    <span class="form__line"></span>
+                <div class="table-wrap">
+                    <table class="chartable">
+                        <caption class="sr-only">Characteristics</caption>
+                        <thead>
+                            <tr><th scope="col">Parameter</th><th scope="col">Value</th><th scope="col">Conditions</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">Primary language</th><td>Kotlin</td><td>All new code</td></tr>
+                            <tr><th scope="row">Also fluent</th><td>Java, Python, C++, Shell</td><td>As required</td></tr>
+                            <tr><th scope="row">UI toolkit</th><td>Jetpack Compose</td><td>Android, Multiplatform</td></tr>
+                            <tr><th scope="row">Focus</th><td>Android, device security</td><td>Root, tamper, integrity</td></tr>
+                            <tr><th scope="row">Tools</th><td>Android SDK, Git, Figma</td><td>Daily</td></tr>
+                            <tr><th scope="row">Shipped</th><td>1 app, 1 library</td><td>Public, open source</td></tr>
+                            <tr><th scope="row">Date code</th><td>2005</td><td>—</td></tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form__input" required>
-                    <span class="form__line"></span>
-                </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="project">Project Type</label>
-                    <div class="custom-select">
-                        <div class="custom-select__trigger">
-                            <span class="custom-select__value">Select an option</span>
-                            <svg class="custom-select__arrow" width="12" height="12" viewBox="0 0 12 12">
-                                <path d="M6 8L1 3h10z" fill="currentColor"/>
-                            </svg>
+            </div>
+        </section>
+
+        <!-- 5 · Ordering -->
+        <section class="page page--ordering" id="ordering" aria-labelledby="ordering-title">
+            <div class="sechead">
+                <span class="sechead__num">5</span>
+                <h2 id="ordering-title" class="sechead__title">Ordering information</h2>
+                <p class="sechead__sub">Open to freelance work and interesting projects, mostly Android and Compose. Email is fastest.</p>
+            </div>
+
+            <div class="ordering">
+                <figure class="chip" aria-labelledby="fig6">
+                    <div class="chip__pkg">
+                        <ul class="chip__pins chip__pins--l">
+                            <li><a href="mailto:rabehxofficial@gmail.com"><span class="pin">1</span><span class="pin__name">EMAIL</span></a></li>
+                            <li><a href="https://t.me/RabehX" target="_blank" rel="noopener"><span class="pin">2</span><span class="pin__name">TELEGRAM</span></a></li>
+                            <li><a href="https://github.com/RabehX" target="_blank" rel="noopener"><span class="pin">3</span><span class="pin__name">GITHUB</span></a></li>
+                            <li><span class="pin">4</span><span class="pin__name pin__name--nc">GND</span></li>
+                        </ul>
+                        <div class="chip__body" aria-hidden="true">
+                            <span class="chip__notch"></span>
+                            <span class="chip__mark">RX-2005</span>
+                            <span class="chip__sub">KT·ANDROID</span>
                         </div>
-                        <div class="custom-select__options">
-                            <div class="custom-select__option" data-value="android">Android Application</div>
-                            <div class="custom-select__option" data-value="kotlin-library">Kotlin/Compose Library</div>
-                            <div class="custom-select__option" data-value="security">Security Solution</div>
-                            <div class="custom-select__option" data-value="collaboration">Open Source Collaboration</div>
-                            <div class="custom-select__option" data-value="other">Other</div>
-                        </div>
+                        <ul class="chip__pins chip__pins--r">
+                            <li><span class="pin">8</span><span class="pin__name pin__name--nc">V<sub>CC</sub></span></li>
+                            <li><a href="https://github.com/RabehX/Securify/releases" target="_blank" rel="noopener"><span class="pin">7</span><span class="pin__name">RELEASES</span></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=io.github.rabehx.securify" target="_blank" rel="noopener"><span class="pin">6</span><span class="pin__name">PLAY</span></a></li>
+                            <li><a href="https://central.sonatype.com/artifact/io.github.rabehx/iconsax-compose" target="_blank" rel="noopener"><span class="pin">5</span><span class="pin__name">MAVEN</span></a></li>
+                        </ul>
                     </div>
-                    <input type="hidden" id="project" name="project" required>
-                    <span class="form__line"></span>
-                </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="message">Message</label>
-                    <textarea id="message" name="message" class="form__input form__textarea" rows="4" required></textarea>
-                    <span class="form__line"></span>
-                </div>
-                
-                <button type="submit" class="form__submit">
-                    <span class="form__submit-text">Send Inquiry</span>
-                    <span class="form__submit-arrow"></span>
-                </button>
-            </form>
-        </div>
-    </section>
+                    <figcaption id="fig6" class="caption"><span class="caption__num">Fig. 6</span><span>Pin configuration, DIP-8, top view.</span></figcaption>
+                </figure>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__left">
-                <span class="footer__logo">РАБEХ АЗЗАМ</span>
-                <span class="footer__tagline">Mobile Developer</span>
+                <div class="order">
+                    <p class="order__label mono">To order, write to</p>
+                    <a class="order__email" href="mailto:rabehxofficial@gmail.com">rabehxofficial<wbr>@gmail.com</a>
+                    <div class="links">
+                        <button type="button" class="btn btn--solid" data-copy="rabehxofficial@gmail.com">Copy address</button>
+                        <a class="btn" href="https://t.me/RabehX" target="_blank" rel="noopener">Telegram</a>
+                        <a class="btn" href="https://github.com/RabehX" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer__center">
-                <p class="footer__copyright">© 2026 — All rights reserved</p>
-            </div>
-            <div class="footer__right">
-                <a href="https://github.com/rabehx" target="_blank" class="footer__social" aria-label="GitHub">
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:rabehxofficial@gmail.com" class="footer__social" aria-label="Email">
-                    <span>Email</span>
-                </a>
-            </div>
-        </div>
+        </section>
+    </main>
+
+    <footer class="footer mono">
+        <span>RX-2005 · Rabeh Azzam</span>
+        <span>Hand-written HTML, CSS and JS. No frameworks.</span>
+        <span>Page 1 of 1</span>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <div class="toast mono" data-toast role="status" aria-live="polite"></div>
+
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
