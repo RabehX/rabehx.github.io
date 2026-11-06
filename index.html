@@ -2,273 +2,282 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mobile Developer specializing in Android, Kotlin, and security solutions. Building elegant mobile experiences.">
-    <meta name="keywords" content="Mobile Developer, Android, Kotlin, Jetpack Compose, Rabeh Azzam">
-    <meta name="author" content="Рабeх Аззам">
-    <title>Рабeх Аззам | Mobile Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Rabeh Azzam — Mobile Developer</title>
+    <meta name="description" content="Rabeh Azzam — mobile developer building Android apps and Compose libraries with Kotlin. Maker of Securify and Iconsax Compose.">
+    <meta name="author" content="Rabeh Azzam">
+    <meta name="theme-color" content="#f1eee6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rabeh Azzam — Mobile Developer">
+    <meta property="og:description" content="Android, Kotlin & Compose. Grab the letters, play in the lab.">
+    <meta property="og:url" content="https://rabehx.github.io/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/64314390?v=4">
+    <meta name="twitter:card" content="summary">
+
     <link rel="icon" href="https://avatars.githubusercontent.com/u/64314390?v=4" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">РАБEХ АЗЗАМ</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
+    <a class="skip" href="#work">Skip to content</a>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="nav__logo">РАБEХ АЗЗАМ</a>
-            <button class="nav__toggle" aria-label="Toggle menu">
-                <span class="nav__toggle-line"></span>
-                <span class="nav__toggle-line"></span>
-            </button>
-        </nav>
+    <!-- Status bar -->
+    <header class="statusbar">
+        <a href="#top" class="statusbar__logo">РАБЕХ АЗЗАМ</a>
+        <span class="statusbar__note"><i class="dot"></i>Open to select projects</span>
+        <span class="statusbar__sys" aria-hidden="true">
+            <span data-clock>--:--</span>
+            <svg width="16" height="12" viewBox="0 0 16 12"><path d="M1 11h2V8H1zM5 11h2V6H5zM9 11h2V3H9zM13 11h2V0h-2z" fill="currentColor"/></svg>
+            <span class="battery"><span class="battery__level" data-battery></span></span>
+        </span>
     </header>
 
-    <!-- Full Screen Menu -->
-    <div class="menu">
-        <div class="menu__content">
-            <nav class="menu__nav">
-                <a href="#hero" class="menu__link" data-index="01">Home</a>
-                <a href="#works" class="menu__link" data-index="02">Selected Works</a>
-                <a href="#about" class="menu__link" data-index="03">About</a>
-                <a href="#contact" class="menu__link" data-index="04">Contact</a>
-            </nav>
-            <div class="menu__footer">
-                <p class="menu__footer-text">Available for select projects</p>
+    <main id="top">
+        <!-- Hero: physics playground -->
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="sr-only">Rabeh Azzam, mobile developer</h1>
+            <div class="hero__meta">
+                <p class="mono">Mobile developer<br>Android · Kotlin · Compose</p>
+                <p class="mono hero__meta-right">Ships apps &amp; libraries<br>with care for the details</p>
             </div>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero__content">
-            <div class="hero__avatar">
-                <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Рабeх Аззам">
+            <div class="stage" data-stage aria-hidden="true">
+                <span class="glyph" data-line="0">Р</span>
+                <span class="glyph" data-line="0">А</span>
+                <span class="glyph" data-line="0">Б</span>
+                <span class="glyph" data-line="0">Е</span>
+                <span class="glyph" data-line="0">Х</span>
+                <span class="glyph" data-line="1">А</span>
+                <span class="glyph" data-line="1">З</span>
+                <span class="glyph" data-line="1">З</span>
+                <span class="glyph" data-line="1">А</span>
+                <span class="glyph" data-line="1">М</span>
+                <span class="pill pill--accent">Kotlin</span>
+                <span class="pill">Jetpack Compose</span>
+                <span class="pill">Android</span>
+                <span class="pill pill--ink">Security</span>
+                <span class="pill">Material 3</span>
+                <span class="pill">KMP</span>
+                <span class="sticker"><img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="" draggable="false"></span>
             </div>
-            <p class="hero__subtitle">Mobile Developer</p>
-            <h1 class="hero__title">
-                <span class="hero__title-line">Crafting Mobile</span>
-                <span class="hero__title-line hero__title-line--italic">Experiences</span>
-            </h1>
-            <p class="hero__bio">Specializing in Android, Kotlin & Security Solutions</p>
-            <a href="https://github.com/rabehx" target="_blank" class="hero__cta">
-                <span>View GitHub</span>
-                <span class="hero__cta-arrow">→</span>
-            </a>
-        </div>
-        <div class="hero__year">
-            <span>BORN JAN 25, 2005</span>
-        </div>
-    </section>
+            <div class="hero__controls">
+                <p class="mono hero__hint"><span class="hero__hint-arrow">↖</span> Grab a letter. Throw it.</p>
+                <div class="chips">
+                    <button class="chip" type="button" data-action="gravity" aria-pressed="false">Zero‑G</button>
+                    <button class="chip" type="button" data-action="shake">Shake</button>
+                    <button class="chip" type="button" data-action="reset">Reset</button>
+                </div>
+            </div>
+        </section>
 
-    <!-- Selected Works Section -->
-    <section id="works" class="works">
-        <div class="works__header">
-            <span class="section-index">02</span>
-            <h2 class="section-title">Selected Works</h2>
-            <p class="section-subtitle">A curated collection of digital craftsmanship</p>
-        </div>
-        
-        <div class="works__gallery">
-            <article class="work-card">
-                <a href="https://github.com/RabehX/Securify" target="_blank">
-                    <div class="work-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/icon.png" alt="Securify" class="work-card__img" onerror="this.style.display='none'">
-                        <div class="work-card__overlay">
-                            <span class="work-card__view">View Project</span>
-                        </div>
+        <!-- Manifesto -->
+        <section class="manifesto" aria-label="Introduction">
+            <p class="manifesto__text" data-reveal-words>
+                I'm Rabeh — I build Android apps and Kotlin libraries that feel
+                quick, honest and a little bit playful. Lately: device security,
+                Play Integrity and icon systems for Compose.
+            </p>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="work" aria-labelledby="work-title">
+            <div class="section-head">
+                <span class="mono section-head__index">01 / Work</span>
+                <h2 id="work-title" class="section-head__title">Selected work</h2>
+            </div>
+
+            <article class="project project--securify" data-tilt>
+                <div class="project__visual">
+                    <img src="https://raw.githubusercontent.com/RabehX/Securify/refs/heads/master/docs/screenshots/cover/feature-graphic.png" alt="Securify overview screen showing threats found and a Play Integrity request button" loading="lazy" width="1024" height="500">
+                    <span class="project__stamp mono">Root check · Play Integrity</span>
+                </div>
+                <div class="project__body">
+                    <span class="mono project__num">A — Android app</span>
+                    <h3 class="project__title">Securify</h3>
+                    <p class="project__desc">Yet another root checker — done properly. Detects Magisk and KernelSU modifications, verifies Play Integrity results and lays out device details, all in Material 3 Expressive with dynamic color.</p>
+                    <ul class="tags">
+                        <li>Kotlin</li><li>Jetpack Compose</li><li>Material 3 Expressive</li><li>Play Integrity API</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="link-btn" href="https://github.com/RabehX/Securify" target="_blank" rel="noopener">Source ↗</a>
+                        <a class="link-btn link-btn--ghost" href="https://play.google.com/store/apps/details?id=io.github.rabehx.securify" target="_blank" rel="noopener">Google Play ↗</a>
                     </div>
-                </a>
-                <div class="work-card__content">
-                    <span class="work-card__category">Mobile Application</span>
-                    <h3 class="work-card__title">Securify</h3>
-                    <p class="work-card__description">Advanced mobile security detection application</p>
                 </div>
             </article>
 
-            <article class="work-card">
-                <a href="https://github.com/RabehX/iconsax-compose" target="_blank">
-                    <div class="work-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <img src="https://raw.githubusercontent.com/RabehX/iconsax-compose/refs/heads/master/icon.png" alt="Iconsax Compose" class="work-card__img" onerror="this.style.display='none'">
-                        <div class="work-card__overlay">
-                            <span class="work-card__view">View Project</span>
+            <article class="project project--iconsax">
+                <div class="project__visual iconlab" data-iconlab data-style="Outline">
+                    <div class="iconlab__bar">
+                        <div class="segmented" role="radiogroup" aria-label="Icon style">
+                            <button type="button" role="radio" aria-checked="true" data-style="Outline">Outline</button>
+                            <button type="button" role="radio" aria-checked="false" data-style="Filled">Filled</button>
                         </div>
+                        <span class="mono iconlab__note">illustrative icons</span>
                     </div>
-                </a>
-                <div class="work-card__content">
-                    <span class="work-card__category">Library</span>
-                    <h3 class="work-card__title">Iconsax Compose</h3>
-                    <p class="work-card__description">Iconsax icon library for Jetpack Compose, supporting multiple styles</p>
+                    <div class="iconlab__grid" data-icon-grid></div>
+                    <code class="iconlab__code mono" data-icon-code>Icon(Iconsax.Outline.Home, "Home")</code>
+                </div>
+                <div class="project__body">
+                    <span class="mono project__num">B — Compose library</span>
+                    <h3 class="project__title">Iconsax Compose</h3>
+                    <p class="project__desc">The full Iconsax set — over a thousand vector icons — as ready-to-use <code>ImageVector</code>s for Compose Multiplatform. One import, every style, RTL-aware arrows included.</p>
+                    <ul class="tags">
+                        <li>Kotlin Multiplatform</li><li>Compose</li><li>Maven Central</li>
+                    </ul>
+                    <div class="project__links">
+                        <a class="link-btn" href="https://github.com/RabehX/iconsax-compose" target="_blank" rel="noopener">Source ↗</a>
+                        <a class="link-btn link-btn--ghost" href="https://central.sonatype.com/artifact/io.github.rabehx/iconsax-compose" target="_blank" rel="noopener">Maven Central ↗</a>
+                    </div>
                 </div>
             </article>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about__header">
-            <span class="section-index">03</span>
-            <h2 class="section-title">About</h2>
-        </div>
-        
-        <div class="about__content">
-            <div class="about__intro">
-                <p class="about__intro-text">
-                    Currently working on mobile security solutions and innovative app projects. 
-                    I'm always excited to collaborate on <em>mobile applications</em> that make 
-                    a meaningful impact in people's daily lives.
-                </p>
+        <!-- Playground -->
+        <section id="lab" class="lab" aria-labelledby="lab-title">
+            <div class="section-head">
+                <span class="mono section-head__index">02 / Playground</span>
+                <h2 id="lab-title" class="section-head__title">Things to poke at</h2>
+                <p class="section-head__sub">Small toys built from the stuff I use every day — springs, ripples and a shell.</p>
             </div>
-            
-            <div class="about__philosophy">
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Languages</h3>
-                    <ul class="about__skills">
-                        <li>Kotlin</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>Shell Script</li>
-                    </ul>
-                </div>
-                
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Tools & Technologies</h3>
-                    <ul class="about__skills">
-                        <li>Jetpack Compose</li>
-                        <li>Android SDK</li>
-                        <li>Git & GitHub</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-                
-                <div class="about__philosophy-item">
-                    <h3 class="about__philosophy-title">Focus</h3>
-                    <p class="about__philosophy-text">
-                        Mobile security solutions, Android development, and creating 
-                        elegant user experiences. I believe in writing clean, maintainable 
-                        code that stands the test of time.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="about__signature">
-            <span class="about__signature-line"></span>
-            <span class="about__signature-text">Crafted with intention</span>
-            <span class="about__signature-line"></span>
-        </div>
-    </section>
 
-    <!-- GitHub Stats Section -->
-    <section class="stats">
-        <div class="stats__container">
-            <div class="stats__item">
-                <div class="stats__number" data-target="2">0</div>
-                <div class="stats__label">Open Source Projects</div>
-            </div>
-            <div class="stats__divider"></div>
-            <div class="stats__item">
-                <div class="stats__number">Kotlin</div>
-                <div class="stats__label">Primary Language</div>
-            </div>
-            <div class="stats__divider"></div>
-            <div class="stats__item">
-                <div class="stats__number">Android</div>
-                <div class="stats__label">Platform Focus</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact__header">
-            <span class="section-index">04</span>
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's collaborate on your next mobile project</p>
-        </div>
-        
-        <div class="contact__content">
-            <form class="contact__form" id="contactForm">
-                <div class="form__group">
-                    <label class="form__label" for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form__input" required>
-                    <span class="form__line"></span>
-                </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form__input" required>
-                    <span class="form__line"></span>
-                </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="project">Project Type</label>
-                    <div class="custom-select">
-                        <div class="custom-select__trigger">
-                            <span class="custom-select__value">Select an option</span>
-                            <svg class="custom-select__arrow" width="12" height="12" viewBox="0 0 12 12">
-                                <path d="M6 8L1 3h10z" fill="currentColor"/>
-                            </svg>
+            <div class="bento">
+                <!-- Spring -->
+                <div class="toy toy--spring" data-spring>
+                    <div class="toy__head">
+                        <span class="mono">spring()</span>
+                        <span class="toy__hint">Drag the ball, let go</span>
+                    </div>
+                    <div class="spring__arena" data-spring-arena>
+                        <svg class="spring__band" data-spring-band aria-hidden="true"><line x1="0" y1="0" x2="0" y2="0"/></svg>
+                        <span class="spring__anchor" aria-hidden="true"></span>
+                        <button class="spring__ball" type="button" data-spring-ball aria-label="Spring ball — drag it, or press to flick it"></button>
+                    </div>
+                    <canvas class="spring__plot" data-spring-plot height="56" aria-hidden="true"></canvas>
+                    <div class="spring__controls">
+                        <div class="segmented segmented--sm" role="radiogroup" aria-label="Damping ratio" data-spring-damping>
+                            <button type="button" role="radio" aria-checked="false" data-value="0.2" data-name="HighBouncy">High</button>
+                            <button type="button" role="radio" aria-checked="true" data-value="0.5" data-name="MediumBouncy">Medium</button>
+                            <button type="button" role="radio" aria-checked="false" data-value="0.75" data-name="LowBouncy">Low</button>
+                            <button type="button" role="radio" aria-checked="false" data-value="1" data-name="NoBouncy">None</button>
                         </div>
-                        <div class="custom-select__options">
-                            <div class="custom-select__option" data-value="android">Android Application</div>
-                            <div class="custom-select__option" data-value="kotlin-library">Kotlin/Compose Library</div>
-                            <div class="custom-select__option" data-value="security">Security Solution</div>
-                            <div class="custom-select__option" data-value="collaboration">Open Source Collaboration</div>
-                            <div class="custom-select__option" data-value="other">Other</div>
+                        <div class="segmented segmented--sm" role="radiogroup" aria-label="Stiffness" data-spring-stiffness>
+                            <button type="button" role="radio" aria-checked="false" data-value="50" data-name="VeryLow">Very low</button>
+                            <button type="button" role="radio" aria-checked="true" data-value="200" data-name="Low">Low</button>
+                            <button type="button" role="radio" aria-checked="false" data-value="1500" data-name="Medium">Medium</button>
+                            <button type="button" role="radio" aria-checked="false" data-value="10000" data-name="High">High</button>
                         </div>
                     </div>
-                    <input type="hidden" id="project" name="project" required>
-                    <span class="form__line"></span>
+                    <pre class="code mono" data-spring-code></pre>
                 </div>
-                
-                <div class="form__group">
-                    <label class="form__label" for="message">Message</label>
-                    <textarea id="message" name="message" class="form__input form__textarea" rows="4" required></textarea>
-                    <span class="form__line"></span>
-                </div>
-                
-                <button type="submit" class="form__submit">
-                    <span class="form__submit-text">Send Inquiry</span>
-                    <span class="form__submit-arrow"></span>
-                </button>
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer -->
+                <!-- Ripple pads -->
+                <div class="toy toy--pads">
+                    <div class="toy__head">
+                        <span class="mono">Modifier.clickable()</span>
+                        <span class="toy__hint">Tap the pads — sound on</span>
+                    </div>
+                    <div class="pads" data-pads></div>
+                </div>
+
+                <!-- Terminal -->
+                <div class="toy toy--term" data-term>
+                    <div class="toy__head">
+                        <span class="mono">~/rabeh</span>
+                        <span class="toy__hint">Type <kbd>help</kbd></span>
+                    </div>
+                    <div class="term" data-term-screen>
+                        <div class="term__out" data-term-out aria-live="polite"></div>
+                        <form class="term__line" data-term-form>
+                            <label class="term__prompt" for="term-input">rabeh@portfolio:~$</label>
+                            <input id="term-input" class="term__input" data-term-input autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send">
+                        </form>
+                    </div>
+                    <div class="term__suggest" data-term-suggest>
+                        <button type="button" class="chip chip--sm">whoami</button>
+                        <button type="button" class="chip chip--sm">projects</button>
+                        <button type="button" class="chip chip--sm">stack</button>
+                        <button type="button" class="chip chip--sm">sudo hire rabeh</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="section-head">
+                <span class="mono section-head__index">03 / About</span>
+                <h2 id="about-title" class="section-head__title">The short version</h2>
+            </div>
+            <div class="about__grid">
+                <figure class="about__portrait">
+                    <img src="https://avatars.githubusercontent.com/u/64314390?v=4" alt="Rabeh's avatar" loading="lazy" width="460" height="460">
+                    <figcaption class="mono">@RabehX</figcaption>
+                </figure>
+                <div class="about__text">
+                    <p>I write Kotlin for a living and for fun. Most of my time goes into Android: Compose UIs, the plumbing underneath them, and the security questions nobody likes to think about — is this device rooted, can this request be trusted?</p>
+                    <p>I care about small things: a spring that settles just right, an icon that lines up on the pixel grid, an APK you can verify yourself. Open source is where most of that work lives.</p>
+                    <dl class="facts">
+                        <div><dt class="mono">Focus</dt><dd>Android &amp; mobile security</dd></div>
+                        <div><dt class="mono">Languages</dt><dd>Kotlin, Java, Python, C++, Shell</dd></div>
+                        <div><dt class="mono">Tools</dt><dd>Compose, Android SDK, Git, Figma</dd></div>
+                    </dl>
+                </div>
+            </div>
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__track">
+                    <span>Kotlin</span><span>✦</span><span>Jetpack Compose</span><span>✦</span><span>Compose Multiplatform</span><span>✦</span><span>Android SDK</span><span>✦</span><span>Material 3</span><span>✦</span><span>Play Integrity</span><span>✦</span><span>Java</span><span>✦</span><span>Python</span><span>✦</span><span>C++</span><span>✦</span><span>Shell</span><span>✦</span>
+                    <span>Kotlin</span><span>✦</span><span>Jetpack Compose</span><span>✦</span><span>Compose Multiplatform</span><span>✦</span><span>Android SDK</span><span>✦</span><span>Material 3</span><span>✦</span><span>Play Integrity</span><span>✦</span><span>Java</span><span>✦</span><span>Python</span><span>✦</span><span>C++</span><span>✦</span><span>Shell</span><span>✦</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <span class="mono section-head__index">04 / Contact</span>
+            <h2 id="contact-title" class="contact__title">Got an idea?<br><em>Let's build it.</em></h2>
+            <div class="contact__mail">
+                <a class="contact__email" href="mailto:rabehxofficial@gmail.com" data-magnetic>rabehxofficial@gmail.com</a>
+                <button class="chip" type="button" data-copy="rabehxofficial@gmail.com">Copy</button>
+            </div>
+            <ul class="contact__links">
+                <li><a href="https://github.com/RabehX" target="_blank" rel="noopener">GitHub ↗</a></li>
+                <li><a href="https://t.me/RabehX" target="_blank" rel="noopener">Telegram ↗</a></li>
+            </ul>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__left">
-                <span class="footer__logo">РАБEХ АЗЗАМ</span>
-                <span class="footer__tagline">Mobile Developer</span>
-            </div>
-            <div class="footer__center">
-                <p class="footer__copyright">© 2026 — All rights reserved</p>
-            </div>
-            <div class="footer__right">
-                <a href="https://github.com/rabehx" target="_blank" class="footer__social" aria-label="GitHub">
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:rabehxofficial@gmail.com" class="footer__social" aria-label="Email">
-                    <span>Email</span>
-                </a>
-            </div>
-        </div>
+        <span class="mono">© <span data-year>2026</span> Rabeh Azzam</span>
+        <span class="mono">Made with Kotlin-brain &amp; plain JavaScript</span>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Bottom navigation bar -->
+    <nav class="navbar" aria-label="Sections">
+        <span class="navbar__indicator" aria-hidden="true"></span>
+        <a href="#top" class="navbar__item" data-nav="top">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20H4z"/></svg><span>Home</span>
+        </a>
+        <a href="#work" class="navbar__item" data-nav="work">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5h6v2"/></svg><span>Work</span>
+        </a>
+        <a href="#lab" class="navbar__item" data-nav="lab">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6L5 19a1 1 0 0 0 1 1.5h12A1 1 0 0 0 19 19l-5-10V3"/></svg><span>Lab</span>
+        </a>
+        <a href="#about" class="navbar__item" data-nav="about">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg><span>About</span>
+        </a>
+        <a href="#contact" class="navbar__item" data-nav="contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span>Contact</span>
+        </a>
+    </nav>
+
+    <div class="toast mono" data-toast role="status" aria-live="polite"></div>
+
+    <script src="assets/vendor/matter.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
